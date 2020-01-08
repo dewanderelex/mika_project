@@ -1,0 +1,204 @@
+body {
+   background: #E5E5E5;
+   font-family: 'Muli', sans-serif;
+}
+
+.logo {
+   position: absolute;
+   width: 166px;
+   height: 47px;
+   left: 45px;
+   top: 22px;
+
+   background: url(./images/logo.svg);
+}
+
+.try_text {
+   /* DÙNG THỬ SẢN PHẨM */
+
+   position: static;
+   width: 184px;
+   height: 24px;
+   left: calc(50% - 184px/2);
+   top: calc(50% - 24px/2);
+
+   font-family: Muli;
+   font-style: normal;
+   font-weight: 800;
+   font-size: 16px;
+   line-height: 150%;
+   /* identical to box height, or 24px */
+
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.02em;
+   text-transform: uppercase;
+
+   /* Primary */
+
+   color: #0B65EC;
+
+   /* Inside Auto Layout */
+
+   flex: none;
+   order: 0;
+   align-self: center;
+   margin: 10px 0px;
+}
+
+.try_container {
+
+   /* Hover */
+
+   /* Auto Layout */
+
+   display: flex;
+   flex-direction: row;
+   padding: 0px 25px;
+
+   position: absolute;
+   width: 234px;
+   height: 48px;
+   left: 1153px;
+   top: 22px;
+
+   /* Primary */
+
+   border: 1px solid #0B65EC;
+   box-sizing: border-box;
+   border-radius: 4px;
+}
+
+.phone {
+   position: absolute;
+   width: 576px;
+   height: 576px;
+   left: 835px;
+   top: 149px;
+
+   background: url(./images/phone.svg);
+}
+
+.title {
+   /* Họp hiệu quả, tiết kiệm thời gian */
+
+   position: absolute;
+   width: 670px;
+   height: 116px;
+   left: 135px;
+   top: 72px;
+
+   font-family: Muli;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 48px;
+   line-height: 120%;
+   /* or 58px */
+
+   display: flex;
+   align-items: center;
+
+   /* Primary */
+
+   color: #0B65EC;
+   mix-blend-mode: normal;
+}
+
+.normal_text {
+   /* Mika là trợ lí trí tuệ nhân tạo trong các buổi họp, giúp bạn ghi lại lời nói, tổng hợp nội dung và đánh dấu thông tin quan trọng để bạn không phải tốn thời gian ghi chép trong và sau buổi họp nữa. Mika có thể giúp bạn với các tính năng sau: */
+
+
+position: absolute;
+width: 661px;
+height: 120px;
+left: 135px;
+top: 226px;
+
+/* Muli/Regular/16pt */
+
+font-family: Muli;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+display: flex;
+align-items: center;
+
+/* Neutral */
+
+color: #0D0B29;
+}
+
+.rect {
+   /* Rectangle 23 */
+
+
+position: absolute;
+left: 9.38%;
+right: 88.4%;
+top: 53.44%;
+bottom: 43%;
+
+/* hihi */
+
+background: #E4E8F8;
+border-radius: 24px;
+}
+
+.box_container {
+   position: absolute;
+width: 661px;
+height: 32px;
+left: 135px;
+top: 381px;
+
+}
+
+p {
+font-family: Muli;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+display: flex;
+align-items: center;
+
+/* Neutral */
+
+color: #0D0B29;
+}
+
+svg {
+   width: 70vw;
+   height: 30px;
+}
+ 
+input[type=text], select {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+ }
+
+input[type=submit] {
+   width: 100%;
+   background-color: #4CAF50;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+ 
+input[type=submit]:hover {
+   background-color: #45a049;
+}
