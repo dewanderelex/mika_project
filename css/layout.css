@@ -3,12 +3,16 @@ body {
    font-family: 'Muli', sans-serif;
 }
 
+.header {
+   display: flex;
+   width: 100vw;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
 .logo {
-   position: absolute;
-   width: 166px;
-   height: 47px;
-   left: 45px;
-   top: 22px;
+   align-self: left;
+   padding: 10px 10px 10px 30px;
 
    background: url(./images/logo.svg);
 }
@@ -16,14 +20,8 @@ body {
 .try_text {
    /* DÙNG THỬ SẢN PHẨM */
 
-   position: static;
-   width: 184px;
-   height: 24px;
-   left: calc(50% - 184px/2);
-   top: calc(50% - 24px/2);
+   justify-content: right;
 
-   font-family: Muli;
-   font-style: normal;
    font-weight: 800;
    font-size: 16px;
    line-height: 150%;
@@ -50,24 +48,87 @@ body {
 .try_container {
 
    /* Hover */
+   
+
+
+   margin: 10px 30px 10px 10px;
 
    /* Auto Layout */
 
+   justify-content: center;
    display: flex;
    flex-direction: row;
-   padding: 0px 25px;
 
-   position: absolute;
-   width: 234px;
-   height: 48px;
-   left: 1153px;
-   top: 22px;
 
    /* Primary */
 
    border: 1px solid #0B65EC;
    box-sizing: border-box;
    border-radius: 4px;
+}
+
+.try_container nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+.try_container nav ul li {
+   --c: #0B65EC;
+   color: var(--c);
+   font-size: 16px;
+
+   border-radius: 0.5em;
+
+   text-transform: uppercase;
+   font-weight: bold;
+
+   padding: 10px 25px 10px 25px;
+   letter-spacing: 0.1em;
+   text-align: center;
+   line-height: 3em;
+   position: relative;
+   overflow: hidden;
+   z-index: 1;
+   transition: 0.5s;
+
+}
+
+.try_container nav ul li span {
+   position: absolute;
+   width: 18%;
+   height: 100%;
+   background-color: var(--c);
+   transform: translateY(150%);
+   border-radius: 50%;
+   left: calc((var(--n) - 1) * 25%);
+   transition: 0.5s;
+   transition-delay: calc((var(--n) - 1) * 0.1s);
+   z-index: -1;
+}
+
+.try_container nav ul li:hover {
+   color: white;
+}
+
+.try_container nav ul li:hover span {
+   transform: translateY(0) scale(4);
+}
+
+.try_container nav ul li span:nth-child(1) {
+   --n: 1;
+}
+
+.try_container nav ul li span:nth-child(2) {
+   --n: 2;
+}
+
+.try_container nav ul li span:nth-child(3) {
+   --n: 3;
+}
+
+.try_container nav ul li span:nth-child(4) {
+   --n: 4;
 }
 
 .phone {
